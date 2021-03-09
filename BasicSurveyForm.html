@@ -1,0 +1,120 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+<style>
+    body{
+ background-image: linear-gradient( 90deg ,white, blue);
+
+}
+
+.email {
+   
+    width: 250px;
+    height: 35px;
+    background-color:#f1f1f1;
+    border-radius: 0.2rem;
+}
+.name {
+   
+    width: 250px;
+    height: 35px;
+    background-color:#f1f1f1;
+    border-radius: 0.2rem;
+}
+
+.submit{
+  height:50px;
+  width:75px;
+  background: royalblue;
+  color:white;
+  border-radius: 2px;
+  box-shadow: 2px 2px #888888;
+  
+}
+  
+.textarea{
+  border-radius:10px;
+  background-color:#f1f1f1;
+  
+}
+  
+</style>
+
+<div id='main'>
+<h1 id='title'>Vize Başvuru Formu</h1>
+<p id='description'>Türkiye'de kalmanıza gerek yok</p>
+
+<form action="" id='survey-form'>
+
+  <label for="name" id="name-label">
+    Name
+<input type="text" id='name' class='name' placeholder="Enter your name" required>
+</label>
+  <br>
+<label for="email" id="email-label">
+  Email
+<input type="email" class='email' id='email' name='email' placeholder="Enter  your Email" required>
+</label>
+    <br>
+<label for="age" id="number-label">
+  Age
+<input type="number" id='number' placeholder="Age" min='10' max='99' required> 
+</label>
+  <br>
+
+<label for='dropdown' id='model'>
+  Hangi ülke için vize almak istiyorsunuz ?
+  <br>
+  <select name="" id="dropdown">
+    <option value=""> Amerika</option>
+    <option value=""> Hollanda</option>
+    <option value=""> İsveç</option>
+    <option value=""> Almanya</option>
+    </select>
+  </label>
+  <br>
+  
+  
+<label id='radio'>
+   <b>Almak İstediğiniz Vize Türü ?</b>
+  <br>
+  <input  type='radio' id='radio'  name='radio' value='Turist-vizesi'>
+  <label for='radio'>Turist Vizesi </label>
+  <br>
+    <input  type='radio' id='radio' name='radio' value='çalışma-vizesi'>
+  <label for='radio'> Çalışma Vizesi</label>
+  <br>
+    <input  type='radio' id='radio' name='radio' value='öğrenci-vizesi'>
+  <label for='radio'> Öğrenci Vizesi</label>
+  <br>
+    <input  type='radio' id='radio'  name='radio' value='kaçak-giriş'>
+  <label for='radio'>Kaçak Yollarla Giriş</label>
+  <br>
+   
+  
+  </label for='job'>
+  <b>Mesleğiniz Nedir </b>
+ <br>
+<input type="checkbox" value='Öğretmen'>
+  <label>Öğretmen</label>
+  <br>
+<input type="checkbox" value='Öğrenci'>
+    <label>Öğrenci</label>
+  <br>
+  <input type="checkbox" value='Mühendis'>
+    <label>Mühendis</label>
+  <br>
+<input type="checkbox" value='Doktor'>
+    <label>Doktor</label>
+  <br>
+  
+<label for='textarea'>
+  <b>Başka Söylemek İstediğiniz bir şey var mı ?</b>
+  <br>
+  <textarea id='textarea' class='textarea' name='textarea' rows='5' cols='40'></textarea>
+           <br>
+  </label>
+<br>
+  <button id='submit' class='submit'>Submit</button>
+
+</div>
